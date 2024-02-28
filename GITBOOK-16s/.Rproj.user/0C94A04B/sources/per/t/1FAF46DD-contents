@@ -1,0 +1,17 @@
+--- 
+title: "Análisis 16s rRNA utilizando DADA2"
+author: "dstt"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography:
+- book.bib
+- packages.bib
+description: |
+  This is...
+link-citations: true
+github-repo: null
+---
+
+<!--chapter:end:index.Rmd-->
+

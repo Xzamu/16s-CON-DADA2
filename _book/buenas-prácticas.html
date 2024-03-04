@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>02 Buenas Prácticas</title>
+  <title>Capítulo 3 Buenas Prácticas | 02 Buenas Prácticas</title>
   <meta name="description" content="This is…" />
   <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="02 Buenas Prácticas" />
+  <meta property="og:title" content="Capítulo 3 Buenas Prácticas | 02 Buenas Prácticas" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is…" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="02 Buenas Prácticas" />
+  <meta name="twitter:title" content="Capítulo 3 Buenas Prácticas | 02 Buenas Prácticas" />
   
   <meta name="twitter:description" content="This is…" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="introducción-a-dada2.html"/>
 
-<link rel="next" href="introducción-a-dada2.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -204,31 +204,121 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">02 Buenas Prácticas</h1>
-<p class="author"><em>.</em></p>
-<p class="date"><em>2024-03-04</em></p>
+<div id="buenas-prácticas" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Capítulo 3</span> Buenas Prácticas<a href="buenas-prácticas.html#buenas-prácticas" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="estrategias-de-análsis" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Estrategias de análsis<a href="buenas-prácticas.html#estrategias-de-análsis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="comparación-de-pipelines" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Comparación de “pipelines”<a href="buenas-prácticas.html#comparación-de-pipelines" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Al comparar pipelines para el análisis de datos de secuenciación del gen 16S rRNA, se deben considerar factores como la facilidad de uso, la documentación disponible y el tiempo de análisis. Pipelines populares como QIIME, MG-RAST, UPARSE y mothur ofrecen herramientas completas desde el control de calidad hasta el agrupamiento OTUs.</p>
+<p>Sin embargo, la accesibilidad para usuarios con conocimientos computacionales limitados y la calidad de la documentación varían entre estos paquetes. Estudios han mostrado que aunque herramientas como mothur y QIIME tienen documentación extensa que puede ser ventajosa, el tiempo de análisis y la facilidad de uso difieren significativamente entre los paquetes, con QIIME siendo rápido (aproximadamente 1 hora) y MG-RAST más lento (aproximadamente 2 días) pero adecuado para usuarios sin experiencia en línea de comandos. La elección del pipeline dependerá del nivel de experiencia del usuario y de los recursos disponibles en su institución.</p>
 </div>
-<div id="análisis-16s-rrna-utilizando-dada2" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Capítulo 1</span> Análisis 16s rRNA utilizando DADA2<a href="index.html#análisis-16s-rrna-utilizando-dada2" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+</div>
+<div id="cross" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Cross-references<a href="buenas-prácticas.html#cross" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cross-references make it easier for your readers to find and link to elements in your book.</p>
+</div>
+<div id="chapters-and-sub-chapters" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Chapters and sub-chapters<a href="buenas-prácticas.html#chapters-and-sub-chapters" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There are two steps to cross-reference any heading:</p>
+<ol style="list-style-type: decimal">
+<li>Label the heading: <code># Hello world {#nice-label}</code>.
+<ul>
+<li>Leave the label off if you like the automated heading generated based on your heading title: for example, <code># Hello world</code> = <code># Hello world {#hello-world}</code>.</li>
+<li>To label an un-numbered heading, use: <code># Hello world {-#nice-label}</code> or <code>{# Hello world .unnumbered}</code>.</li>
+</ul></li>
+<li>Next, reference the labeled heading anywhere in the text using <code>\@ref(nice-label)</code>; for example, please see Chapter <a href="buenas-prácticas.html#cross">3.2</a>.
+<ul>
+<li>If you prefer text as the link instead of a numbered reference use: <a href="buenas-prácticas.html#cross">any text you want can go here</a>.</li>
+</ul></li>
+</ol>
+</div>
+<div id="captioned-figures-and-tables" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Captioned figures and tables<a href="buenas-prácticas.html#captioned-figures-and-tables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Figures and tables <em>with captions</em> can also be cross-referenced from elsewhere in your book using <code>\@ref(fig:chunk-label)</code> and <code>\@ref(tab:chunk-label)</code>, respectively.</p>
+<p>See Figure <a href="buenas-prácticas.html#fig:nice-fig">3.1</a>.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="buenas-prácticas.html#cb26-1" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, .<span class="dv">1</span>, .<span class="dv">1</span>))</span>
+<span id="cb26-2"><a href="buenas-prácticas.html#cb26-2" tabindex="-1"></a><span class="fu">plot</span>(pressure, <span class="at">type =</span> <span class="st">&#39;b&#39;</span>, <span class="at">pch =</span> <span class="dv">19</span>)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:nice-fig"></span>
+<img src="02-buenas-p_files/figure-html/nice-fig-1.png" alt="Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases." width="80%" />
+<p class="caption">
+Figure 3.1: Here is a nice figure!
+</p>
+</div>
+<p>Don’t miss Table <a href="buenas-prácticas.html#tab:nice-tab">3.1</a>.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="buenas-prácticas.html#cb27-1" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb27-2"><a href="buenas-prácticas.html#cb27-2" tabindex="-1"></a>  <span class="fu">head</span>(pressure, <span class="dv">10</span>), <span class="at">caption =</span> <span class="st">&#39;Here is a nice table!&#39;</span>,</span>
+<span id="cb27-3"><a href="buenas-prácticas.html#cb27-3" tabindex="-1"></a>  <span class="at">booktabs =</span> <span class="cn">TRUE</span></span>
+<span id="cb27-4"><a href="buenas-prácticas.html#cb27-4" tabindex="-1"></a>)</span></code></pre></div>
+<table>
+<caption><span id="tab:nice-tab">Table 3.1: </span>Here is a nice table!</caption>
+<thead>
+<tr class="header">
+<th align="right">temperature</th>
+<th align="right">pressure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">0</td>
+<td align="right">0.0002</td>
+</tr>
+<tr class="even">
+<td align="right">20</td>
+<td align="right">0.0012</td>
+</tr>
+<tr class="odd">
+<td align="right">40</td>
+<td align="right">0.0060</td>
+</tr>
+<tr class="even">
+<td align="right">60</td>
+<td align="right">0.0300</td>
+</tr>
+<tr class="odd">
+<td align="right">80</td>
+<td align="right">0.0900</td>
+</tr>
+<tr class="even">
+<td align="right">100</td>
+<td align="right">0.2700</td>
+</tr>
+<tr class="odd">
+<td align="right">120</td>
+<td align="right">0.7500</td>
+</tr>
+<tr class="even">
+<td align="right">140</td>
+<td align="right">1.8500</td>
+</tr>
+<tr class="odd">
+<td align="right">160</td>
+<td align="right">4.2000</td>
+</tr>
+<tr class="even">
+<td align="right">180</td>
+<td align="right">8.8000</td>
+</tr>
+</tbody>
+</table>
+<p>La geocomputación ha evolucionado significativamente en las últimas décadas</p>
 
-<style>
-.rmdnote {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #abcdef;
-  background-color: #f3f3f3;
-  border-radius: 5px;
-}
-</style>
 </div>
+</div>
+
+
+
+
+
+
+
             </section>
 
           </div>
         </div>
       </div>
+<a href="introducción-a-dada2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="introducción-a-dada2.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

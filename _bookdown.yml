@@ -1,4 +1,11 @@
 delete_merged_file: true
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: "Capítulo "
+book_filename: "Análisis 16s"
+output_dir: "_book"
+new_session: yes
+rmd_files:
+  - index.Rmd
+  - 01-intro.Rmd
+  - 02-buenas-p.Rmd
